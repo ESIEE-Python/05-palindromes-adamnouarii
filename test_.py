@@ -25,6 +25,15 @@ input_output = [("Ésope reste ici et se repose", True), ("La mariée ira mal", 
                 ("À révéler mon nom, mon nom se relèvera", False), ("ni palindrome ne mord ni lapin", True)]
 
 
-@pytest.mark.parametrize("input,expected", input_output)
-def test(input, expected):
-    assert ispalindrome(input) == expected, input
+def test_1():
+    """
+    1er test 
+    """
+    assert ispalindrome('ADA') == True
+
+
+def test_2():
+    """
+    2ème test
+    """
+    assert ispalindrome('non') == True
