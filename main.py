@@ -14,7 +14,6 @@ def ispalindrome(p):
     if p == p[::-1]:
         return True
     return False
-
 def main():
     """
     appel à la fonction secondaire ispalindrome
